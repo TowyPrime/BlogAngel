@@ -35,7 +35,7 @@ header {
     font-weight: 500;
 }
 
-.logo {
+/*.logo {
     display: flex;
     gap: 1.5rem;
     align-items: center;
@@ -43,7 +43,7 @@ header {
 
 .logo img {
     width: 16rem;
-}
+}*/
 
 
 .menu-nav {
