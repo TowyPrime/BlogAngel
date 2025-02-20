@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publicar en el Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1e293b;
+            text-align: center;
+        }
+
+        .container {
+            color: white;
+            max-width: 500px;
+            margin: 20px auto;
+            background-color: #0f172a;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label,
+        textarea,
+        input,
+        select {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        textarea {
+            height: 150px;
+        }
+
+        button {
+            background: #007BFF;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Nuevo Post</h2>
+        <form id="blogForm" action="guardar_post.php" method="post" onsubmit="return validarFormulario()">
+            <label for="titulo">Título:</label>
+            <input type="text" id="titulo" name="titulo" required>
+
+            <label for="contenido">Contenido:</label>
+            <textarea id="contenido" name="contenido" required></textarea>
+
+            <label for="categoria">Categoría:</label>
+            <select id="categoria" name="categoria">
+                <option value="tecnologia">Artículos</option>
+                <option value="vida">Proyectos</option>
+                <option value="negocios">Libros</option>
+                <option value="negocios">Podcast</option>
+                <option value="negocios">Cursos</option>
+            </select>
+
+            <button type="submit">Publicar</button>
+        </form>
+    </div>
+
+    <script>
+        function validarFormulario() {
+            let titulo = document.getElementById("titulo").value;
+            let contenido = document.getElementById("contenido").value;
+
+            if (titulo.trim() === "" || contenido.trim() === "") {
+                alert("Por favor, completa todos los campos.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+
+</body>
+
+</html>
