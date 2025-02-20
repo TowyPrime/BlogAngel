@@ -12,10 +12,6 @@ body {
     font-size: 1.6rem;
 }
 
-img {
-    max-width: 100%;
-}
-
 .contenedor {
     max-width: 120rem;
     margin: 0 auto;
@@ -45,7 +41,6 @@ header {
     width: 16rem;
 }
 
-
 .menu-nav {
     display: flex;
     justify-content: space-between;
@@ -74,6 +69,19 @@ header {
     list-style: none;
 }
 
+.btn-mobile-menu {
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-nav {
+    color: white;
+    width: 35px;
+    height: 35px;
+}
+
 /* Header contenido */
 .contenedor-header {
     display: flex;
@@ -100,7 +108,7 @@ header {
     margin-top: 4rem;
 }
 
-.botones-header a:first-child, 
+.botones-header a:first-child,
 .botones-header a:last-child {
     padding: 1.3rem 2rem;
     font-size: 1.4rem;
@@ -156,7 +164,7 @@ main {
     padding: 4.8rem 0;
 }
 
-.articulo:nth-child(5) {
+.articulo:nth-child(3) {
     border-bottom: none;
     margin-bottom: 2rem;
 }
@@ -164,9 +172,9 @@ main {
 .etiqueta {
     background-color: #334155;
     color: #d4d4d4;
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
     font-size: 1.3rem;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
 }
 
 .span-lectura {
@@ -214,7 +222,7 @@ main {
     color: white;
     background-color: #10b981;
     padding: 1rem 3rem;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
 }
 
 .btn-ver-todos:hover {
@@ -244,12 +252,11 @@ footer {
 
 .contenedor-footer ul {
     padding: 0;
-    justify-content: space-between;
 }
 
 .contenedor-footer li {
     list-style: none;
-  
+
     justify-content: space-between;
 }
 
@@ -265,14 +272,142 @@ footer {
 }
 
 .contenedor-footer2 {
-    background-color: transparent; /* Hace que adopte el fondo del footer */
-    padding: 0; /* Elimina el espacio extra */
-    margin-top: -1.5rem; 
+    background-color: #1e293b;
+    color: #a3a3a3;
+    padding: 1rem 0;
 }
 
 .footer-final {
-    max-width: 100%;
+    max-width: 120rem;
     margin: 0 auto;
     text-align: center;
     font-size: 1.5rem;
+}
+
+
+
+
+
+
+@media (max-width: 540px) {
+
+    .navegacion {
+        background-color: #0f172a;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        transition: all 0.5s;
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+    }
+
+    .nav-activo .navegacion {
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+    }
+
+    .nav-activo .icon-close{
+        display: block;
+        font-weight: 700;
+    }
+
+    .nav-activo .icon-menu{
+        display: none;
+    }
+    
+
+    .navegacion ul {
+       flex-direction: column;
+       align-items: center;
+    }
+
+    .navegacion ul li a{
+        font-size: 2.6rem;
+    }
+
+    .btn-mobile-menu{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 1.5rem 2rem 0 0; 
+    }
+
+    .icon-close{
+        display: none;
+    }
+
+    .contenedor-header {
+        flex-direction: column;
+        max-width: 100%;
+        padding: 2.5rem;
+    }
+
+    .contenedor-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenedor-header h1 {
+        font-size: 2.6rem;
+        margin-bottom: 0;
+    }
+
+    .botones-header {
+        margin-top: 2.5rem;
+    }
+
+    .contenedor-header p {
+        text-align: center;
+        padding-right: 0;
+        font-weight: 300;
+        font-size: 1.2rem;
+    }
+
+    .contenedor-header img {
+        margin-top: 7rem;
+        width: 25rem;
+    }
+
+    /*Responsive seccion principal*/
+
+    .seccion-principal h2 {
+        font-size: 2.2rem;
+    }
+
+    .articulo {
+        margin: 0 3.5rem;
+    }
+
+    .etiqueta {
+        font-size: 1rem;
+    }
+
+    .contenedor-footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contenedor-footer a {
+        font-size: 1.4rem;
+    }
+
+    .contenedor-footer h3 {
+        font-size: 1.6rem;
+    }
+
+    .footer-final {
+        font-size: 1.3rem;
+    }
 }
