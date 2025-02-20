@@ -12,20 +12,32 @@
 <body>
     <header>
         <!-- Primera parte del header y el menu de navegacion -->
-        <div class="contenedor menu-nav">
+        <div class="contenedor menu-nav ">
             <div class="logo">
                 <img src="/imgs/logo_blog_angel.png" alt="logo_blog_angel">
                 <a href="/">Blog de Angel</a>
             </div>
             <nav class="navegacion">
                 <ul>
-                    <li><a href="/pages/articulos.html">Articulos</a></li>
-                    <li><a href="/pages/proyectos.html">Proyectos</a></li>
-                    <li><a href="/pages/libros.html">Libros</a></li>
-                    <li><a href="/pages/podcast.html">Podcast</a></li>
-                    <li><a href="/pages/cursos.html">Cursos</a></li>
+                    <li><a href="/articulos.html">Articulos</a></li>
+                    <li><a href="/proyectos.html">Proyectos</a></li>
+                    <li><a href="/libros.html">Libros</a></li>
+                    <li><a href="/podcast.html">Podcast</a></li>
+                    <li><a href="/cursos.html">Cursos</a></li>
                 </ul>
             </nav>
+            <button class="btn-mobile-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="icon-nav icon-menu">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="icon-nav icon-close">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                </svg>
+
+            </button>
         </div>
         <!-- Segunda parte del header y el menu de navegacion -->
         <section class="contenedor-header">
@@ -34,10 +46,10 @@
                 <p>Blog personal en el cual veremos distintos artículos,
                     libros, cursos, pódcast y proyectos interesantes.</p>
                 <div class="botones-header">
-                    <a href="#">Enviar proyectos</a>
-                    <a href="#">Leer artículos</a>
+                    <a href="/formulario.html">Enviar proyectos</a>
+                    <a href="/articulos.html">Leer artículos</a>
                 </div>
-              
+
             </div>
             <div>
                 <img src="/imgs/banner.png" alt="banner-header">
@@ -53,7 +65,8 @@
                 <div class="articulo">
                     <!--categoria-->
                     <span class="etiqueta">Programación</span>
-                    <h2><a href="#">Cómo optimizar el rendimiento de una aplicación web: Buenas prácticas y herramientas</a></h2>
+                    <h2><a href="#">Cómo optimizar el rendimiento de una aplicación web: Buenas prácticas y
+                            herramientas</a></h2>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores necessitatibus eius quasi
                         id mollitia,
@@ -65,7 +78,7 @@
                         <span class="span-lectura">minutos de lectura</span>
                     </div>
                 </div>
-                <!-- 2-->
+                <!--2-->
                 <div class="articulo">
                     <!--categoria-->
                     <span class="etiqueta">Programación</span>
@@ -81,43 +94,11 @@
                         <span class="span-lectura">minutos de lectura</span>
                     </div>
                 </div>
-                <!-- 3-->
+                <!--3-->
                 <div class="articulo">
                     <!--categoria-->
-                    <span class="etiqueta">Libros</span>
-                    <h2><a href="#">The Pragmatic Programmer</a></h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores necessitatibus eius quasi
-                        id mollitia,
-                        explicabo sed consectetur quis nihil placeat iure esse culpa delectus minus cupiditate ea
-                        molestiae deleniti vitae!
-                    </p>
-                    <div class="mas-informacion">
-                        <a href="#">Leer más</a>
-                        <span class="span-lectura">minutos de lectura</span>
-                    </div>
-                </div>
-                <!--4-->
-                <div class="articulo">
-                    <!--categoria-->
-                    <span class="etiqueta">categoria de artículo</span>
-                    <h2><a href="#">Titulo del artículo</a></h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores necessitatibus eius quasi
-                        id mollitia,
-                        explicabo sed consectetur quis nihil placeat iure esse culpa delectus minus cupiditate ea
-                        molestiae deleniti vitae!
-                    </p>
-                    <div class="mas-informacion">
-                        <a href="#">Leer más</a>
-                        <span class="span-lectura">minutos de lectura</span>
-                    </div>
-                </div>
-                <!--5-->
-                <div class="articulo">
-                    <!--categoria-->
-                    <span class="etiqueta">categoria de artículo</span>
-                    <h2><a href="#">Titulo del artículo</a></h2>
+                    <span class="etiqueta">Categoria</span>
+                    <h2><a href="#">Titulo</a></h2>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores necessitatibus eius quasi
                         id mollitia,
@@ -154,35 +135,38 @@
                     <li><a href="#">Política de privacidad</a></li>
                     <li><a href="#">Términos y condiciones</a></li>
                 </ul>
-                
+
             </div>
             <div class="explorar-footer">
                 <h3>Explorar</h3>
                 <ul>
                     <li><a href="#">Articulos</a></li>
-                    <li><a href="#">Proyectos</a></li>
-                    <li><a href="#">Libros</a></li>
-                    <li><a href="#">Podcast</a></li>
-                    <li><a href="#">Cursos</a></li>
+                    <li><a href="/proyectos.html">Proyectos</a></li>
+                    <li><a href="/libros.html">Libros</a></li>
+                    <li><a href="/podcast.html">Podcast</a></li>
+                    <li><a href="/cursos.html">Cursos</a></li>
                 </ul>
             </div>
             <div class="proyectos-footer">
                 <h3>Proyectos</h3>
                 <ul>
-                    <li><a href="#">Envía un proyecto</a></li>
+                    <li><a href="/formulario.html">Envía un proyecto</a></li>
                     <li><a href="#">Redes sociales</a></li>
-                    <li><a href="#">Proyectos de código abierto</a></li>
+                    <li><a
+                            href="https://www.nwtime.org/projects/?gad_source=1&gclid=CjwKCAiAk8G9BhA0EiwAOQxmfjdzsHwVhzlrLPq_RJ66Kd8m-ScvVkPJg-ufyo7SENr2xXVZElCJjBoCkOoQAvD_BwE">Proyectos
+                            de código abierto</a></li>
                 </ul>
-               
+
             </div>
-            <div class="contenedor-footer2">
-                <div class="footer-final">
-                    <p>&copy; 2025-Blog de Ángel | Desarrollado por Angel Davila para la materia 'Desarrollo de Aplicaciones en Red'</p>
-                </div>
+
+        </div>
+        <div class="contenedor-footer2">
+            <div class="footer-final">
+                <p>&copy; 2025-Blog de Ángel | Desarrollado por Angel Davila</p>
             </div>
         </div>
     </footer>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
