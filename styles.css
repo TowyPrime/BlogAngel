@@ -412,7 +412,7 @@ footer {
     }
 }
 
-@media (max-width: 768px) { 
+@media (max-width: 768px){
     .navegacion {
         background-color: #0f172a;
         position: absolute;
@@ -439,7 +439,7 @@ footer {
 
     .nav-activo .icon-close{
         display: block;
-        font-weight: 700;
+        font-weight: 750;
     }
 
     .nav-activo .icon-menu{
@@ -453,7 +453,7 @@ footer {
     }
 
     .navegacion ul li a{
-        font-size: 2.6rem;
+        font-size: 2.8rem;
     }
 
     .btn-mobile-menu{
@@ -471,7 +471,7 @@ footer {
     .contenedor-header {
         flex-direction: column;
         max-width: 100%;
-        padding: 2.5rem;
+        padding: 2.7rem;
     }
 
     .contenedor-header {
@@ -481,30 +481,30 @@ footer {
     }
 
     .contenedor-header h1 {
-        font-size: 2.6rem;
+        font-size: 2.8rem;
         margin-bottom: 0;
     }
 
     .botones-header {
-        margin-top: 2.5rem;
+        margin-top: 2.7rem;
     }
 
     .contenedor-header p {
         text-align: center;
         padding-right: 0;
-        font-weight: 300;
-        font-size: 1.2rem;
+        font-weight: 350;
+        font-size: 1.4rem;
     }
 
     .contenedor-header img {
-        margin-top: 7rem;
-        width: 25rem;
+        margin-top: 8rem;
+        width: 27rem;
     }
 
     /*Responsive seccion principal*/
 
     .seccion-principal h2 {
-        font-size: 2.2rem;
+        font-size: 2.4rem;
     }
 
     .articulo {
@@ -526,12 +526,10 @@ footer {
     }
 
     .contenedor-footer h3 {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
     }
 
     .footer-final {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
     }
-
-  }
-
+}
