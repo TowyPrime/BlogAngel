@@ -412,6 +412,7 @@ footer {
     }
 }
 
+
 @media (max-width: 768px){
     .navegacion {
         background-color: #0f172a;
@@ -533,3 +534,4 @@ footer {
         font-size: 1.4rem;
     }
 }
+
