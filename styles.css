@@ -121,6 +121,19 @@ header {
     text-decoration: none;
 }
 
+
+.botones-header a:first-child {
+    background-color: #059669;
+    color: white;
+    margin-right: 2.5rem;
+}
+
+.botones-header a:last-child {
+    background-color: white;
+    color: #404040;
+}
+
+
 .botones-header-proyectos a:first-child,
 .botones-header-proyectos a:last-child {
     padding: 1.3rem 2rem;
@@ -143,17 +156,6 @@ header {
     font-size: 1.2rem;
     border-radius: 0.5rem;
     text-decoration: none;
-}
-
-.botones-header a:first-child {
-    background-color: #059669;
-    color: white;
-    margin-right: 2.5rem;
-}
-
-.botones-header a:last-child {
-    background-color: white;
-    color: #404040;
 }
 
 .contenedor-header img {
