@@ -134,29 +134,6 @@ header {
 }
 
 
-.botones-header-proyectos a:first-child,
-.botones-header-proyectos a:last-child {
-    padding: 1.3rem 2rem;
-    font-size: 1.2rem;
-    border-radius: 0.5rem;
-    text-decoration: none;
-}
-
-.botones-header-podcast a:first-child,
-.botones-header-podcast a:last-child {
-    padding: 1.3rem 2rem;
-    font-size: 1.2rem;
-    border-radius: 0.5rem;
-    text-decoration: none;
-}
-
-.botones-header-articulos a:first-child,
-.botones-header-articulos a:last-child {
-    padding: 1.3rem 2rem;
-    font-size: 1.2rem;
-    border-radius: 0.5rem;
-    text-decoration: none;
-}
 
 .contenedor-header img {
     width: 100%;
