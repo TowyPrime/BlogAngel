@@ -12,7 +12,7 @@
 <body>
     <header>
         <!-- Primera parte del header y el menu de navegacion -->
-        <div class="contenedor menu-nav">
+        <div class="contenedor menu-nav ">
             <div class="logo">
                 <img src="/imgs/logo_blog_angel.png" alt="logo_blog_angel">
                 <a href="/">Blog de Angel</a>
@@ -26,15 +26,27 @@
                     <li><a href="/cursos.html">Cursos</a></li>
                 </ul>
             </nav>
+            <button class="btn-mobile-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="icon-nav icon-menu">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="icon-nav icon-close">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                </svg>
+
+            </button>
         </div>
         <!-- Segunda parte del header y el menu de navegacion -->
         <section class="contenedor-header">
             <div class="contenido-header">
                 <h1>Sección de artículos</h1>
-                <p>Presentamos la sección de artículos del blog de Ángel</p>
+                <p>Sección de articulos recomendados por este blog</p>
                 <div class="botones-header">
-                    <a href="#">Pedir un artículo</a>
-                    <a href="/proyectos.html">Ver proyectos</a>
+                    <a href="/formulario.html">Enviar recomendaciones de artículos</a>
+                    <a href="/cursos.html">Ver cursos</a>
                 </div>
 
             </div>
@@ -45,60 +57,30 @@
     </header>
     <main>
         <div class="seccion-principal">
-            <h2>Artículos</h2>
-            <p class="parrafo-titulo"> Lea los artículos de este blog</p>
+            <h2>Últimos Articulos recomendados</h2>
+            <p class="parrafo-titulo"> Vea los artículos recomendados por este blog</p>
             <section class="contenedor-articulos">
                 <!--1-->
                 <div class="articulo">
                     <!--categoria-->
-                    <span class="etiqueta">Programación</span>
-                    <h2><a href="#">Cómo optimizar el rendimiento de una aplicación web: Buenas prácticas y
-                            herramientas</a></h2>
+                    <span class="etiqueta">Categoria de artículo</span>
+                    <h2><a href="#">Titulo del artículo</a></h2>
                     <p>
-                        El rendimiento web es un término que engloba la calidad medible y percibida de la experiencia
-                        del usuario de un sitio web —con especial énfasis en la velocidad y fiabilidad de la página.
-
-                        Los desarrolladores y propietarios de los sitios web pueden tomar una serie de medidas para
-                        mejorar el rendimiento de su sitio web. Estos pasos incluyen la optimización de factores del
-                        diseño web, tales como el tamaño de las imágenes, el formato del código y el uso de scripts
-                        externos, junto con la elección de buenos proveedores para el alojamiento, el almacenamiento de
-                        contenido en caché y load balancing.
-
-                        Cuando las páginas web se cargan más rápido y de forma más fiable, no solo ofrecen una mejor
-                        experiencia del usuario, sino que también tienden a posicionarse mejor en los resultados de
-                        búsqueda orgánica, tienen mayor visibilidad para los posibles visitantes web y, a menudo, ven un
-                        mayor porcentaje de conversión.
-
-
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores necessitatibus eius quasi
+                        id mollitia,
+                        explicabo sed consectetur quis nihil placeat iure esse culpa delectus minus cupiditate ea
+                        molestiae deleniti vitae!
                     </p>
                     <div class="mas-informacion">
-                        <a href="https://www.cloudflare.com/es-es/learning/performance/speed-up-a-website/"
-                            target="_blank">Leer más</a>
-                        <span class="span-lectura">15 minutos de lectura</span>
+                        <a href="#">Leer más</a>
+                        <span class="span-lectura">minutos de lectura</span>
                     </div>
                 </div>
-                <!-- 2-->
+                <!--2-->
                 <div class="articulo">
                     <!--categoria-->
-                    <span class="etiqueta">Programación</span>
-                    <h2><a href="#">Arquitectura limpia en desarrollo backend: Principios y ejemplos prácticos</a></h2>
-                    <p>
-                        Muchos desarrolladores conocen los principios del código limpio, pero existe otra forma de
-                        mejorar:
-                        la arquitectura limpia. No muchos conocen el concepto de arquitectura limpia, aunque
-                        definitivamente vale la pena explorarlo.
-                        Mi propia experiencia demuestra que implementar los principios de la arquitectura limpia en su
-                        proyecto puede resolver una serie de problemas.
-                    <div class="mas-informacion">
-                        <a href="https://codilime.com/blog/clean-architecture/">Leer más</a>
-                        <span class="span-lectura">14 minutos de lectura</span>
-                    </div>
-                </div>
-                <!-- 3-->
-                <div class="articulo">
-                    <!--categoria-->
-                    <span class="etiqueta">Libros</span>
-                    <h2><a href="#">The Pragmatic Programmer</a></h2>
+                    <span class="etiqueta">Categoria de articulo</span>
+                    <h2><a href="#">Titulo del artículo</a></h2>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores necessitatibus eius quasi
                         id mollitia,
@@ -113,7 +95,7 @@
                 <!--3-->
                 <div class="articulo">
                     <!--categoria-->
-                    <span class="etiqueta">categoria de artículo</span>
+                    <span class="etiqueta">Categoria de articulo</span>
                     <h2><a href="#">Titulo del artículo</a></h2>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores necessitatibus eius quasi
@@ -126,10 +108,9 @@
                         <span class="span-lectura">minutos de lectura</span>
                     </div>
                 </div>
-
                 <!--boton ver todos-->
                 <div class="contenedor-btn">
-                    <a href="/articulos.html" class="btn-ver-todos">Ver todos</a>
+                    <a href="#" class="btn-ver-todos">Ver todos</a>
                 </div>
             </section>
         </div>
@@ -167,9 +148,11 @@
             <div class="proyectos-footer">
                 <h3>Proyectos</h3>
                 <ul>
-                    <li><a href="#">Envía un proyecto</a></li>
+                    <li><a href="/formulario.html">Envía un proyecto</a></li>
                     <li><a href="#">Redes sociales</a></li>
-                    <li><a href="#">Proyectos de código abierto</a></li>
+                    <li><a
+                            href="https://www.nwtime.org/projects/?gad_source=1&gclid=CjwKCAiAk8G9BhA0EiwAOQxmfjdzsHwVhzlrLPq_RJ66Kd8m-ScvVkPJg-ufyo7SENr2xXVZElCJjBoCkOoQAvD_BwE">Proyectos
+                            de código abierto</a></li>
                 </ul>
 
             </div>
@@ -177,8 +160,7 @@
         </div>
         <div class="contenedor-footer2">
             <div class="footer-final">
-                <p>&copy; 2025-Blog de Ángel | Desarrollado por Angel Davila para la materia 'Desarrollo de
-                    Aplicaciones en Red'</p>
+                <p>&copy; 2025-Blog de Ángel | Desarrollado por Angel Davila</p>
             </div>
         </div>
     </footer>
