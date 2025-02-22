@@ -17,6 +17,11 @@ body {
     margin: 0 auto;
 }
 
+.contenedor_pod {
+    max-width: 140rem;
+    margin: 0 auto;
+}
+
 /* Header */
 header {
     background-color: #0f172a;
