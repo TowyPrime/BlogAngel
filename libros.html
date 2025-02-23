@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog de Angel | Podcast</title>
+    <title>Blog de Angel | Cursos</title>
     <link rel="stylesheet" href="/normalize.css">
     <link rel="stylesheet" href="/styles.css">
 </head>
@@ -12,7 +12,7 @@
 <body>
     <header>
         <!-- Primera parte del header y el menu de navegacion -->
-        <div class="contenedor menu-nav">
+        <div class="contenedor menu-nav ">
             <div class="logo">
                 <img src="/imgs/logo_blog_angel.png" alt="logo_blog_angel">
                 <a href="/">Blog de Angel</a>
@@ -26,15 +26,27 @@
                     <li><a href="/cursos.html">Cursos</a></li>
                 </ul>
             </nav>
+            <button class="btn-mobile-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="icon-nav icon-menu">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="icon-nav icon-close">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                </svg>
+
+            </button>
         </div>
         <!-- Segunda parte del header y el menu de navegacion -->
         <section class="contenedor-header">
             <div class="contenido-header">
-                <h1>Sección de podcast</h1>
-                <p>Presentamos la sección de los podcast recomendados por este blog</p>
-                <div class="botones-header">
-                    <a href="#">Pedir agregar libro</a>
-                    <a href="/proyectos.htmls">Ver proyectos</a>
+                <h1>Sección de cursos</h1>
+                <p>Sección de podcast recomendados por este blog</p>
+                <div class="botones-header botones-header-podcast">
+                    <a href="/formulario.html">Enviar recomendaciones de cursos</a>
+                    <a href="/articulos.html">Leer artículos</a>
                 </div>
 
             </div>
@@ -45,44 +57,14 @@
     </header>
     <main>
         <div class="seccion-principal">
-            <h2>Artículos</h2>
-            <p class="parrafo-titulo"> vea los podcast recomendados por este blog</p>
+            <h2>Últimos cursos recomendados</h2>
+            <p class="parrafo-titulo"> Vea los cursos recomendados por este blog</p>
             <section class="contenedor-articulos">
                 <!--1-->
                 <div class="articulo">
                     <!--categoria-->
-                    <span class="etiqueta">Categoria</span>
-                    <h2><a href="#">Titulo de proyecto</a></h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia incidunt delectus ad. Minus
-                        tempore repellat cum nihil quo perspiciatis, molestiae quidem, sint accusamus id omnis atque
-                        voluptates consequuntur deleniti et.
-                    </p>
-                    <div class="mas-informacion">
-                        <a href="#">Leer más</a>
-                        <span class="span-lectura">minutos de lectura</span>
-                    </div>
-                </div>
-                <!-- 2-->
-                <div class="articulo">
-                    <!--categoria-->
-                    <span class="etiqueta">Categoria</span>
-                    <h2><a href="#">Titulo de proyecto</a></h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia incidunt delectus ad. Minus
-                        tempore repellat cum nihil quo perspiciatis, molestiae quidem, sint accusamus id omnis atque
-                        voluptates consequuntur deleniti et.
-                    </p>
-                    <div class="mas-informacion">
-                        <a href="#">Ver más</a>
-                        <span class="span-lectura">minutos de duracion</span>
-                    </div>
-                </div>
-                <!-- 3-->
-                <div class="articulo">
-                    <!--categoria-->
-                    <span class="etiqueta">Categoria</span>
-                    <h2><a href="#">Titulo de podcast</a></h2>
+                    <span class="etiqueta">Categoria de cursos</span>
+                    <h2><a href="#">Titulo del curso</a></h2>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores necessitatibus eius quasi
                         id mollitia,
@@ -91,14 +73,30 @@
                     </p>
                     <div class="mas-informacion">
                         <a href="#">Ver más</a>
-                        <span class="span-lectura">minutos de duracion</span>
+                        <span class="span-lectura">Horas de duracion</span>
+                    </div>
+                </div>
+                <!--2-->
+                <div class="articulo">
+                    <!--categoria-->
+                    <span class="etiqueta">Categoria de curso</span>
+                    <h2><a href="#">Titulo del curso</a></h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores necessitatibus eius quasi
+                        id mollitia,
+                        explicabo sed consectetur quis nihil placeat iure esse culpa delectus minus cupiditate ea
+                        molestiae deleniti vitae!
+                    </p>
+                    <div class="mas-informacion">
+                        <a href="#">Ver más</a>
+                        <span class="span-lectura">Horas de duracion</span>
                     </div>
                 </div>
                 <!--3-->
                 <div class="articulo">
                     <!--categoria-->
-                    <span class="etiqueta">categoria de podcast</span>
-                    <h2><a href="#">Titulo del podcast</a></h2>
+                    <span class="etiqueta">Categoria de curso</span>
+                    <h2><a href="#">Titulo del curso</a></h2>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores necessitatibus eius quasi
                         id mollitia,
@@ -106,14 +104,13 @@
                         molestiae deleniti vitae!
                     </p>
                     <div class="mas-informacion">
-                        <a href="#"><Video></Video>er más</a>
-                        <span class="span-lectura">minutos de duracion</span>
+                        <a href="#">Ver más</a>
+                        <span class="span-lectura">Horas de duracion</span>
                     </div>
                 </div>
-
                 <!--boton ver todos-->
                 <div class="contenedor-btn">
-                    <a href="/l" class="btn-ver-todos">Ver todos</a>
+                    <a href="#" class="btn-ver-todos">Ver todos</a>
                 </div>
             </section>
         </div>
@@ -151,9 +148,11 @@
             <div class="proyectos-footer">
                 <h3>Proyectos</h3>
                 <ul>
-                    <li><a href="#">Envía un proyecto</a></li>
+                    <li><a href="/formulario.html">Envía un proyecto</a></li>
                     <li><a href="#">Redes sociales</a></li>
-                    <li><a href="#">Proyectos de código abierto</a></li>
+                    <li><a
+                            href="https://www.nwtime.org/projects/?gad_source=1&gclid=CjwKCAiAk8G9BhA0EiwAOQxmfjdzsHwVhzlrLPq_RJ66Kd8m-ScvVkPJg-ufyo7SENr2xXVZElCJjBoCkOoQAvD_BwE">Proyectos
+                            de código abierto</a></li>
                 </ul>
 
             </div>
@@ -161,12 +160,11 @@
         </div>
         <div class="contenedor-footer2">
             <div class="footer-final">
-                <p>&copy; 2025-Blog de Ángel | Desarrollado por Angel Davila para la materia 'Desarrollo de
-                    Aplicaciones en Red'</p>
+                <p>&copy; 2025-Blog de Ángel | Desarrollado por Angel Davila</p>
             </div>
         </div>
     </footer>
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
