@@ -133,8 +133,6 @@ header {
     color: #404040;
 }
 
-
-
 .contenedor-header img {
     width: 100%;
 }
@@ -292,6 +290,8 @@ footer {
     font-size: 1.5rem;
 }
 
+
+
 @media (max-width: 540px) {
 
     .navegacion {
@@ -370,6 +370,27 @@ footer {
         margin-top: 2rem;
     }
 
+    .botones-header-proyectos a:first-child,
+    .botones-header-proyectos a:last-child {
+        padding: 1rem 1.2rem;
+        font-size: 1rem;
+       
+    }
+
+    .botones-header-articulos a:first-child,
+    .botones-header-articulos a:last-child {
+        padding: 1rem 1.2rem;
+        font-size: 1rem;
+       
+    }
+
+    .botones-header-podcast a:first-child,
+    .botones-header-podcast a:last-child {
+        padding: 1rem 1.2rem;
+        font-size: 1rem;
+       
+    }
+
     .contenedor-header p {
         text-align: center;
         padding-right: 0;
@@ -414,6 +435,3 @@ footer {
         font-size: 1.3rem;
     }
 }
-
-
-
